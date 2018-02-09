@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dibyjyoti Maity</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dibyajyoti Maity</title>
+
+<style>
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
 </head>
 <body>
-
-<h1>Hi! I am Dibyajyoti Maity</h1>
-<p>Hello World.</p>
-
+    <div class="row">
+        <div class="column">
+            <img src="images/dibyajyoti_maity.png" width=80%>
+        </div>
+        <div class="column">
+            <h1>Hi! I am Dibyajyoti Maity</h1>
+            <p>I am a doctoral student in the Department of Mathematics at Indian Institute of Science, Bengaluru. I work in computational biology and perform molecular dynamics simulations of protein molecules.</p>
+        </div>
 </body>
 </html>
