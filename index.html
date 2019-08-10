@@ -15,7 +15,7 @@ img {
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
-    width: 33.33%;
+    {% comment %} width: 33.33%; {% endcomment %}
     padding: 15px;
 }
 
@@ -37,12 +37,28 @@ img {
 </head>
 <body>
     <div class="row">
-        <div class="column">
-            <img src="images/dibyajyoti_maity.png" width=80%>
+        <div class="column" width=30%>
+            <img src="images/dibyajyoti_maity.png" width=20%>
         </div>
-        <div class="column">
+        <div class="column" width=60%>
             <h1>Hi! I am Dibyajyoti Maity</h1>
-            <p>I am a doctoral student in the Department of Mathematics at Indian Institute of Science, Bengaluru. I work in computational biology and perform molecular dynamics simulations of protein molecules.</p>
+            <p>
+                I am a doctoral student in the Department of Mathematics at Indian Institute of Science, Bengaluru. I work in the field of computational biology and perform molecular dynamics simulations of protein molecules. I have built a python package for analysing dynamics of electric field around a protein molecule, called MD Davis. Please visit <a href="https://djmaity.github.io/md_davis/">https://djmaity.github.io/md_davis/</a> to know more.
+            </p>
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    A proline insertion-deletion in the spike glycoprotein fusion peptide of mouse hepatitis virus strongly alters neuropathology<br>
+                    Manmeet Singh, Abhinoy Kishore, Dibyajyoti Maity, Punnepalli Sunanda, Bankala Krishnarjuna, Sreeparna Vappala, Srinivasarao Raghothama, Lawrence C. Kenyon, Debnath Pal and Jayasri Das Sarma <br> 
+                    Journal of Biological Chemistry 294 (20), 8064-8087<br<
+                </li>
+                <br>
+                <li>
+                    Molecular insights of inhibition in sickle hemoglobin polymerization upon glutathionylation: hydrogen/deuterium exchange mass spectrometry and molecular dynamics simulation-based approach<br>
+                    Rajdeep Das, Amrita Mitra, Gopa Mitra, Dibyajyoti Maity, Vijay Bhat, Debnath Pal, Cecil Ross, Anura V. Kurpad, Amit Kumar Mandal<br>
+                    Biochemical Journal 475 (13), 2153-2166<br>
+                </li>
+            </ul>
         </div>
 </body>
 </html>
