@@ -1,64 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dibyajyoti Maity</title>
+  <title>Dibyajyoti Maity</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/ico" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-<style>
-img {
-    max-width: 100%;
-    height: auto;
-}
+    .my-color {background-color: #059862}
+    .my-text-color {color: #059862}
 
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    {% comment %} width: 33.33%; {% endcomment %}
-    padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width:600px) {
-    .column {
-        width: 100%;
+    .reduce-bottom-margin {
+      margin-bottom: -0.75em;
     }
-}
-</style>
 
+
+    #profile-photo {
+      border:1px solid grey;
+      margin: 5px;
+      width:90%;
+      box-shadow: 0em 0.5em 0.5em #888888;
+    }
+    a {
+      color:#3f51b5!important;
+      text-decoration: none;
+    }
+    /* hr { margin: 10px 0 10px 0; } */
+  </style>
 </head>
-<body>
-    <div class="row">
-        <div class="column" width=30%>
-            <img src="images/dibyajyoti_maity.png" width=20%>
-        </div>
-        <div class="column" width=60%>
-            <h1>Hi! I am Dibyajyoti Maity</h1>
-            <p>
-                I am a doctoral student in the Department of Mathematics at Indian Institute of Science, Bengaluru. I work in the field of computational biology and perform molecular dynamics simulations of protein molecules. I have built a python package for analysing dynamics of electric field around a protein molecule, called MD Davis. Please visit <a href="https://djmaity.github.io/md_davis/">https://djmaity.github.io/md_davis/</a> to know more.
-            </p>
-            <h2>Publications</h2>
+<body class="w3-light-grey">
+
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+
+        <div class="w3-white w3-text-dark-grey w3-card-4 w3-round-large">
+          <br>
+          <div class="w3-content w3-center">
+            <img src="static/dibyajyoti_maity_square.png" alt="Photo" class="w3-circle" id="profile-photo">
+            <h1>Dibyajyoti Maity</h1>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right my-text-color"></i>Computational Biologist; Bioinformatician</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right my-text-color"></i>Kolkata, IN</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right my-text-color" style="vertical-align:middle"></i><img src="static/email.svg" alt="e-mail" style="vertical-align:middle;height:1em"></p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right my-text-color" style="vertical-align:middle"></i><img src="static/phone.svg" alt="phone" style="vertical-align:middle;height:0.8em;"></p>
+            <p><i class="fab fa-skype fa-fw w3-margin-right my-text-color"></i>djmaity</p>
+            <hr>
+            <p><a href="https://www.linkedin.com/in/djmaity/"><i class="fab fa-linkedin w3-hover-opacity fa-fw w3-margin-right my-text-color"></i></a><a href="https://www.linkedin.com/in/djmaity/" class="w3-hover-opacity">linkedin.com/in/djmaity</a></p>
+            <p><a href="https://www.researchgate.net/profile/Dibyajyoti-Maity/"><i class="fab fa-researchgate w3-hover-opacity fa-fw w3-margin-right my-text-color"></i></a><a href="https://www.researchgate.net/profile/Dibyajyoti-Maity/" class="w3-hover-opacity">researchgate.net/profile/Dibyajyoti-Maity</a></p>
+            <p><a href="https://www.github.com/djmaity"><i class="fab fa-github w3-hover-opacity fa-fw w3-margin-right my-text-color"></i></a><a href="https://www.github.com/djmaity" class="w3-hover-opacity">github.com/djmaity</a></p>
+            <hr>
+
+            <h2><b><i class="fa fa-wrench fa-fw w3-margin-right my-text-color"></i>Skills</b></h2>
             <ul>
-                <li>
-                    A proline insertion-deletion in the spike glycoprotein fusion peptide of mouse hepatitis virus strongly alters neuropathology<br>
-                    Manmeet Singh, Abhinoy Kishore, Dibyajyoti Maity, Punnepalli Sunanda, Bankala Krishnarjuna, Sreeparna Vappala, Srinivasarao Raghothama, Lawrence C. Kenyon, Debnath Pal and Jayasri Das Sarma <br> 
-                    Journal of Biological Chemistry 294 (20), 8064-8087<br<
-                </li>
-                <br>
-                <li>
-                    Molecular insights of inhibition in sickle hemoglobin polymerization upon glutathionylation: hydrogen/deuterium exchange mass spectrometry and molecular dynamics simulation-based approach<br>
-                    Rajdeep Das, Amrita Mitra, Gopa Mitra, Dibyajyoti Maity, Vijay Bhat, Debnath Pal, Cecil Ross, Anura V. Kurpad, Amit Kumar Mandal<br>
-                    Biochemical Journal 475 (13), 2153-2166<br>
-                </li>
+              <li class="w3-padding-small">Molecular Dynamics (GROMACS)</li>
+              <li class="w3-padding-small">Data Science</li>
+              <li class="w3-padding-small">Python Programming</li>
+              <li class="w3-padding-small">MATLAB</li>
             </ul>
+
+            <h2><b><i class="fa fa-flask fa-fw w3-margin-right my-text-color"></i>Research Interests</b></h2>
+            <ul>
+              <li class="w3-padding-small">Hb S and Sickle Cell Anemia</li>
+              <li class="w3-padding-small">Biomolecular Simulations</li>
+              <li class="w3-padding-small">Systems Biology</li>
+              <li class="w3-padding-small">Biophysics</li>
+            </ul>
+            <br>
+          </div>
+        </div><br>
+
+        <!-- End Left Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card  w3-round-large w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey" style="vertical-align:middle"><i class="w3-margin-right my-text-color"><img src="static/DM.svg" alt="DM" style="height: 1em; vertical-align:middle"></i>Hi!</h2>
+          <p class="w3-justify">
+            I am a computational biologist. I use molecular dynamics (MD) simulations to understand how protein molecules perform many intricate functions in living things. After having to analyze numerous MD simulations, I developed a python package, MD DaVis (<a href="https://djmaity.github.io/md_davis/" class="w3-hover-opacity">https://djmaity.github.io/md_davis/</a>), to automate the process. It can create interactive plots and visualizations, which alleviates the need to create multiple static plots. Check out my profile below to know more about me and my work.
+          </p>
         </div>
-</body>
-</html>
+
+        <!-- <div class="w3-container w3-card  w3-round-large w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey"><i class="fa fa-suitcase fa-fw w3-margin-right my-text-color"></i>Work Experience</h2>
+          <div class="w3-container">
+            <div class="w3-row">
+              <div class="w3-col l8">
+                <h5 class="w3-opacity"><b>Indian Institue of Science, Bangalore, IN</b></h5>
+              </div>
+              <div class="w3-col l4">
+                <h6 class="my-text-color"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>2013 - <span class="w3-tag my-color w3-round">Present</span></h6>
+              </div>
+            </div>
+            <h6>Doctoral Candidate</h6>
+            <p>Molecular dynamics simulations of proteins</p>
+          </div>
+          <br>
+        </div> -->
+
+        <div class="w3-container w3-card  w3-round-large w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey"><i class="fa fa-university fa-fw w3-margin-right my-text-color"></i>Education</h2>
+          <div class="w3-container">
+            <div class="w3-row">
+              <div class="w3-col l8">
+                <h5><b>Indian Institue of Science, Bangalore, IN</b></h5>
+              </div>
+              <div class="w3-col l4">
+                <h6 class="my-text-color"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>2013 - <span class="w3-tag my-color w3-round">Present</span></h6>
+              </div>
+            </div>
+            <h6>Ph.D. Degree</h6>
+            <p>Thesis: Effect of Single Residue Change on Conformational Dynamics of Proteins and Their Function: A Molecular Dynamics Study<br>
+              Advisors: <a href="http://cds.iisc.ac.in/faculty/dpal/" class="w3-hover-opacity">Prof. Debnath Pal</a> and <a href="https://www.csa.iisc.ac.in/~sunil/" class="w3-hover-opacity">Prof. L. Sunil Chandran</a></p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <div class="w3-row">
+                <div class="w3-col l8">
+                  <h5><b>Indian Institue of Science Education and Research, Kolkata, IN</b></h5>
+                </div>
+                <div class="w3-col l4">
+                  <h6 class="my-text-color"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>2008 - 2013</h6>
+                </div>
+              </div>
+              <h6>BS-MS Dual Degree in Physics</h6>
+              <br>
+            </div>
+          </div>
+
+          <div class="w3-container w3-card  w3-round-large w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey"><i class="fa fa-file-alt fa-fw w3-margin-right my-text-color"></i>Publications</h2>
+            <div class="w3-container">
+              <h5 class="reduce-bottom-margin"><b>Molecular Dynamics Explains the Interactions Driving Sickle Cell Fibrillation</b></h5>
+              <p class="w3-text-grey"><b class="my-text-color">Dibyajyoti Maity</b> and Debnath Pal<br>
+                Under review</p>
+              </div>
+              <hr class="w3-padding-small">
+              <div class="w3-container">
+                <h5 class="reduce-bottom-margin"><b>A Theoretical Model of Sickle Hemoglobin Fibril Concordant with Experimental Data</b></h5>
+                <p class="w3-text-grey"><b class="my-text-color">Dibyajyoti Maity</b> and Debnath Pal<br>
+                  Manuscript submitted</p>
+                </div>
+                <hr>
+                <div class="w3-container">
+                  <h5 class="reduce-bottom-margin"><b>Aggregation of M3 (E376D) variant of alpha1- antitrypsin</b></h5>
+                  <p class="w3-text-grey">Arif Bashir, Younis Hazari, Debnath Pal, <b class="my-text-color">Dibyajyoti Maity</b>, Samirul Bashir, ...<br>
+                    Scientific Reports, vol. 10, p. 8290, 19 5 2020; <a href="https://doi.org/10.1038/s41598-020-64860-1" class="w3-hover-opacity">https://doi.org/10.1038/s41598-020-64860-1</a></p>
+                  </div>
+                  <hr>
+                  <div class="w3-container">
+                    <h5 class="reduce-bottom-margin"><b>Structural analysis of glutathionyl hemoglobin using native mass spectrometry</b></h5>
+                    <p class="w3-text-grey">Monita Muralidharan, Amrita Mitra, <b class="my-text-color">Dibyajyoti Maity</b>, Debnath Pal, and Amit Kumar Mandal<br>
+                      Journal of Structural Biology, vol. 208, 1 12 2019; <a href="https://doi.org/10.1016/j.jsb.2019.09.003" class="w3-hover-opacity">https://doi.org/10.1016/j.jsb.2019.09.003</a></p>
+                    </div>
+                    <hr>
+                    <div class="w3-container">
+                      <h5 class="reduce-bottom-margin"><b>A proline insertion-deletion in the spike glycoprotein fusion peptide of mouse hepatitis virus strongly alters neuropathology</b></h5>
+                      <p class="w3-text-grey">Manmeet Singh, Abhinoy Kishore, <b class="my-text-color">Dibyajyoti Maity</b>, Punnepalli Sunanda, Bankala Krishnarjuna, ...<br>
+                        Journal of Biological Chemistry, vol. 294, p. 8064–8087, 17 5 2019; <a href="https://doi.org/10.1074/jbc.RA118.004418" class="w3-hover-opacity">https://doi.org/10.1074/jbc.RA118.004418</a></p>
+                      </div>
+                      <hr>
+                      <div class="w3-container">
+                        <h5 class="reduce-bottom-margin"><b>Molecular insights of inhibition in sickle hemoglobin polymerization upon glutathionylation: hydrogen/deuterium exchange mass spectrometry and molecular dynamics simulation-based approach</b></h5>
+                        <p class="w3-text-grey">Rajdeep Das, Amrita Mitra, Gopa Mitra, <b class="my-text-color">Dibyajyoti Maity</b>, Vijay Bhat,  ...<br>
+                          Biochemical Journal, vol. 475, p. 2153–2166, 16 7 2018; <a href="https://doi.org/10.1042/BCJ20180306" class="w3-hover-opacity">https://doi.org/10.1042/BCJ20180306</a></p>
+                        </div>
+                        <br>
+                      </div>
+
+                      <div class="w3-container w3-card  w3-round-large w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey"><i class="fa fa-file-contract fa-fw w3-margin-right my-text-color"></i>Conference Posters</h2>
+                        <div class="w3-container">
+                          <h5 class="reduce-bottom-margin"><b>Let’s Build a Software Ecosystem for Molecular Dynamics</b></h5>
+                          <p class="w3-text-grey">Hünfeld 2021: Workshop on Computer Simulation and Theory of Macromolecules<br>
+                            (Virtual), 23 – 24 April 2021</p>
+                          </div>
+                          <hr>
+                          <div class="w3-container">
+                            <h5 class="reduce-bottom-margin"><b>Novel Analysis and Data Visualization of Molecular Dynamics Trajectories</b></h5>
+                            <p class="w3-text-grey">27th Conference on Intelligent Systems for Molecular Biology and the 18th European Conference on Computational Biology<br>
+                              Basel, Switzerland, 21 – 25 Jul 2019 <a href="https://doi.org/10.7490/f1000research.1117310.1" class="w3-hover-opacity">https://doi.org/10.7490/f1000research.1117310.1</a></p>
+                            </div>
+                            <hr>
+                            <div class="w3-container">
+                              <h5 class="reduce-bottom-margin"><b>Study of Enzyme Kinetics</b></h5>
+                              <p class="w3-text-grey">Winter School, Algorithms in Structural Bioinformatics: Modelling Large Macromolecular Assemblies<br>
+                                INRIA Sophia Antipolis, France, 8 – 12 Dec 2014</p>
+                              </div>
+                              <br>
+                            </div>
+
+                            <div class="w3-container w3-card  w3-round-large w3-white">
+                              <h2 class="w3-text-grey"><i class="fa fa-award fa-fw w3-margin-right my-text-color"></i>Awards</h2>
+                              <div class="w3-container">
+                                <div class="w3-row">
+                                  <div class="w3-col l8">
+                                    <h5 class="reduce-bottom-margin"><b>Junior Research Fellowship</b></h5>
+                                    <p class="w3-text-grey">Council of Scientific & Industrial Research (CSIR), Govt. of India</p>
+                                  </div>
+                                  <div class="w3-col l4">
+                                    <h6 class="my-text-color"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Apr 2014 – Jul 2018</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="w3-container">
+                                <div class="w3-row">
+                                  <div class="w3-col l8">
+                                    <h5 class="reduce-bottom-margin"><b>Kishore Vaigyanik Protsahan Yojana (KVPY) Fellow</b></h5>
+                                    <p class="w3-text-grey">A scholarship by the Department of Science and Technology, Govt. of India</p>
+                                  </div>
+                                  <div class="w3-col l4">
+                                    <h6 class="my-text-color"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>Apr 2007 – Jun 2013</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="w3-container">
+                                <div class="w3-row">
+                                  <div class="w3-col l8">
+                                    <h5 class="reduce-bottom-margin"><b>62nd Meeting of Nobel Laureates in Physics at Lindau, Germany</b></h5>
+                                    <p class="w3-text-grey">Selected among the 592 young researchers worldwide</p>
+                                  </div>
+                                  <div class="w3-col l4">
+                                    <h6 class="my-text-color"><i class="fa fa-calendar-alt fa-fw w3-margin-right"></i>1 – 6 Jul 2012</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                            </div>
+
+                            <!-- End Right Column -->
+                          </div>
+
+
+                          <!-- End Grid -->
+                        </div>
+
+                        <!-- End Page Container -->
+                      </div>
+
+                      <footer class="w3-container my-color w3-center w3-margin-top">
+                        <p>Find me online.</p>
+                        <p>
+                          <a href="https://www.facebook.com/djmaity/"><i class="fab fa-facebook w3-hover-opacity w3-text-black"></i></a>
+                          <a href="https://www.instagram.com/djmaity/"><i class="fab fa-instagram w3-hover-opacity w3-text-black"></i></a>
+                          <a href="https://www.twitter.com/djmaity/"><i class="fab fa-twitter w3-hover-opacity w3-text-black"></i></a>
+                          <!-- <a href=""><i class="fab fa-twitter w3-hover-opacity w3-text-black"></i></a> -->
+                          <!-- <a href="https://in.pinterest.com/djmaity/"><i class="fab fa-pinterest w3-hover-opacity w3-text-black"></i></a> -->
+
+                          <!-- <i class="fab fa-gitlab"></i>
+                            <i class="fab fa-bitbucket"></i>
+                            <i class="fab fa-python"></i>
+
+                            <i class="fab fa-blogger"></i>
+                            <i class="fab fa-wordpress"></i>
+                            <i class="fab fa-medium"></i>
+
+                            <i class="fab fa-mendeley"></i>
+
+                            <i class="fab fa-dev"></i>
+
+                            <i class="fab fa-deviantart"></i>
+                            <i class="fab fa-flickr"></i>
+                            <i class="fab fa-stumbleupon-circle"></i>
+
+                            <i class="fab fa-steam"></i>
+                            <i class="fab fa-discord"></i>
+                            <i class="fab fa-twitch"></i>
+
+                            <i class="fab fa-reddit"></i>
+                            <i class="fab fa-quora"></i>
+                            <i class="fab fa-stack-exchange"></i>
+                            <i class="fab fa-slideshare"></i>
+
+                            <i class="fab fa-spotify"></i>
+                            <i class="fab fa-tumblr"></i>
+                            <i class="fab fa-wikipedia-w"></i>
+
+                            <i class="fab fa-vimeo"></i>
+                            <i class="fab fa-youtube"></i> -->
+                          </p>
+                        </footer>
+
+                      </body>
+                      </html>
